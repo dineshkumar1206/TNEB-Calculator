@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNEB Calculator</title>
+    <link rel="icon" href="tneb1.jpeg">
+    <script src="eb.js" defer></script>
+    <link rel="stylesheet" href="eb.css">
+</head>
+<body>
+    <h1 class="head">TNEB HOME BILL CALCULATOR</h1>
+    <div class="container">
+    <h3>Consumed Units :</h3><input type="number" placeholder="Enter Unit" id="input">
+    <button type="button" onclick="calculate()" id="btn">Calculate</button>
+    <h3 class="amount">Bill Amount :</h3>
+    <div id="value"></div>
+</div>
+<div class="btn-box">
+<input type="button" value="1" onclick="input.value = input.value + 1" class="buttons">
+<input type="button" value="2" onclick="input.value = input.value + 2" class="buttons">
+<input type="button" value="3" onclick="input.value = input.value + 3" class="buttons">
+<input type="button" value="4" onclick="input.value = input.value + 4" class="buttons">
+<input type="button" value="5" onclick="input.value = input.value + 5" class="buttons">
+<input type="button" value="6" onclick="input.value = input.value + 6" class="buttons">
+<input type="button" value="7" onclick="input.value = input.value + 7" class="buttons">
+<input type="button" value="8" onclick="input.value = input.value + 8" class="buttons">
+<input type="button" value="9" onclick="input.value = input.value + 9" class="buttons">
+<input type="button" value="." onclick="input.value = input.value+ '.'" class="buttons">
+<input type="button" value="0" onclick="input.value = input.value + 0" class="buttons">
+<input type="button" value="C" onclick="input.value = ''" class="buttons" id="clear">
+</div>
+
+</body>
+</html>
